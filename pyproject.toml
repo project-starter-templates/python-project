@@ -1,0 +1,18 @@
+[project]
+name = "python-project"
+version = "0.1.0"
+description = "Python project template 🐍"
+authors = [
+    {name = "Macktireh", email = "abdimack97@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.pdm.scripts]
+dev = "python main.py"
+
+
+[tool.pdm]
+distribution = false
