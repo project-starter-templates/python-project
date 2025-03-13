@@ -9,13 +9,14 @@ readme = "README.md"
 license = {text = "MIT"}
 dependencies = []
 
+[dependency-groups]
+lint = []
+
 [tool.pdm.scripts]
 dev = "python main.py"
-
-[dependency-groups]
-lint = [
-    "ruff>=0.9.6",
-]
+setup = "pdm add -dG lint ruff"
+post_setup = "python main.py"
+post_init = "pdm run setup"
 
 [tool.pdm]
 distribution = false
