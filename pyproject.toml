@@ -22,7 +22,7 @@ post_init = "pdm run setup"
 distribution = false
 
 [tool.ruff]
-line-length = 110
+line-length = 99
 exclude = [
     ".bzr",
     ".direnv",
